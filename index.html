@@ -3,12 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Daftar Provinsi dan Kota</title>
+    <title>Provinsi dan Kota</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      #provinsi-list,
+      #kota-list {
+        list-style-type: none;
+        padding: 0;
+      }
+      li {
+        cursor: pointer;
+        padding: 5px;
+        margin: 5px 0;
+        background-color: #a99898;
+        border: 1px solid #e1b4b4;
+      }
+      li:hover {
+        background-color: #948d8d;
+      }
+    </style>
   </head>
   <body>
-    <h1>Daftar Provinsi dan Kota</h1>
-    <div id="province-list"></div>
-    <div id="city-list"></div>
+    <h1>Data Provinsi dan Kota</h1>
+    <h2>Provinsi</h2>
+    <ul id="provinsi-list"></ul>
+    <h2 id="kota-heading" style="display: none">Kota</h2>
+    <ul id="kota-list"></ul>
 
     <script src="script.js"></script>
   </body>
